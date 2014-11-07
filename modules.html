@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>Modules</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="src/init.js"></script>
+</head>
+<body>
+    <h1>Welcome to modules test</h1>
+    <script>
+        var files = ['src/mylib.js', 'src/mylib_a.js', 'src/mylib_b.js'];
+        initjs.load(files, function() {
+            console.log("All modules loaded");
+            console.log(mylib);
+            mylib.a.hello();
+            mylib.b.hello();
+        });
+        // Now that your javascript library works great, concatenate
+        // all files into one and go build your app.
+    </script>
+</body>
+</html>
+
