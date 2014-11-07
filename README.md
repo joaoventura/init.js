@@ -25,14 +25,16 @@ Suppose we are building a javascript library called 'mylib' which have two sub-m
 
 Then, in 'mylib.js' we declare the 'mylib' namespace and, in 'mylib_a.js' and 'mylib_b.js' we are appending the submodules 'a' and 'b' to mylib. In 'modules.html', which serves only as a test location, we just need to import all modules and submodules of 'mylib' and test them. Don't forget to add the init.js script to your document head.
 
-'''var files = ['src/mylib.js', 'src/mylib_a.js', 'src/mylib_b.js'];
+```javascript
+var files = ['src/mylib.js', 'src/mylib_a.js', 'src/mylib_b.js'];
 
 initjs.load(files, function() {
     console.log("All modules loaded");
     console.log(mylib);
     mylib.a.hello();
     mylib.b.hello();
-});'''
+});
+```
 
 Notice how we use 'mylib.a' and 'mylib.b' and everything works fine!
 
