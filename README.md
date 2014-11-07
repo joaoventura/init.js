@@ -7,7 +7,7 @@ Just give the URLs of the scripts, a callback function and init.js will call you
 
 ## How does it work? ##
 
-In a nutshell, init.js creates a <script> tag for each source url and adds it to document.head. So, it is like if you did that yourself in your HTML document but saves you from that trouble.
+In a nutshell, init.js creates a 'script' tag for each source url and adds it to document.head. So, it is like if you did that yourself in your HTML document but saves you from that trouble.
 
 ## What is it good for? ##
 
